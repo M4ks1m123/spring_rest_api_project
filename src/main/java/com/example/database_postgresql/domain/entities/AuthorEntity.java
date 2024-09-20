@@ -1,4 +1,4 @@
-package com.example.database_postgresql.domain;
+package com.example.database_postgresql.domain.entities;
 
 
 import jakarta.persistence.*;
@@ -10,7 +10,7 @@ import lombok.*;
 @Builder
 @Entity
 @Table(name = "authors")
-public class Author {
+public class AuthorEntity {
 
     @Id
     @GeneratedValue(strategy= GenerationType.SEQUENCE, generator = "author_id_seq")
